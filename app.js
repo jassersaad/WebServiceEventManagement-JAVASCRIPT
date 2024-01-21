@@ -2,7 +2,7 @@ const express = require('express'); //framework
 const app = express(); //app used in the express framework
 const bodyparser = require('body-parser') // modify the data to json type
 const authRoute = require('./routes/auth.route') // service of authentfication located in the routes directory
-const eventRoute = require('./routes/event.route') // service of books located in the routes directory
+const eventRoute = require('./routes/event.route') // service of events located in the routes directory
 require('dotenv').config(); // where we store our sensitive data
 const mongoose = require('mongoose'); // ODM to connect to our MongoDB database
 const checkAuth = require('./middleware/checkAuth'); // Where we used JWT (json web token) to verify authentification
